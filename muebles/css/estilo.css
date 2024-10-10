@@ -1,0 +1,181 @@
+/* linea css recomendable en todos 
+los proyectos. 
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/ 
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/******* CSS de la página ******/
+body {
+    font-family: 'Raleway',sans-serif;
+    line-height: 2;
+}
+.azul {
+    color: #037bc0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair',serif;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 5rem 0; 
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-principal ul {
+    display:flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border-top: 2px solid lightgray;
+    padding: 2rem;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color:black;
+}
+
+.menu-principal a:hover {
+    color:#037bc0;
+}
+
+.imagen-fondo {
+    background-image: url(../img/principal.jpg);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.categorias__lista {
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.categorias__cat {
+    display:flex;
+    flex-direction: column;
+}
+
+.categorias__cat a {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+.categorias__cat a:hover {
+    background-color: #037bc0;
+    color:white;
+    border-bottom-right-radius: 1rem;
+}
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#0479ba;
+    margin-top: 5rem;
+    color:white;
+    text-align: justify;
+}
+
+.nosotros__img {
+    background-image: url(../img/nosotros.jpg);
+    min-height: 40rem;
+    background-size: cover;
+}
+
+.nosotros__descripcion {
+    width:60%;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nosotros__descripcion h2 {
+    text-align: left;
+}
+
+.tienda__producto {
+    background-color: #037bc0;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+.p1 {grid-area:p1}
+.p2 {grid-area:p2}
+.p3 {grid-area:p3}
+.p4 {grid-area:p4}
+.p5 {grid-area:p5}
+.p6 {grid-area:p6}
+
+.tienda__lista {
+    display: grid;
+    grid-template-areas:"p1 p1 p1 p1 p1 p1"
+                        "p2 p2 p2 p3 p3 p3"
+                        "p4 p4 p5 p5 p6 p6";
+    grid-template-columns: repeat(6,1fr);
+    gap:2rem;
+    width:60%;
+    margin:0 auto;
+}
+
+.p1 {
+    flex-direction: row;
+}
+.p1 img{
+    width:70%;
+    object-fit: cover;
+}
+
+.producto__descripcion {
+    padding: 2rem;
+}
+
+.precio {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.boton {
+    background-color: #8cbc00;
+    color:white;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+
+}
